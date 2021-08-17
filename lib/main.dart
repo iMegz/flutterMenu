@@ -51,12 +51,12 @@ class Menu extends StatelessWidget {
 }
 
 const arr = [
-  {"title":"Pizza gamda awi","url":"img1.jpg"},
-  {"title":"Burger agmed men el pizza","url":"img2.jpg"},
-  {"title":"Just macaroni","url":"img3.jpg"},
-  {"title":"Chicken Panne","url":"img4.jpg"},
-  {"title":"7wawshi","url":"img5.jpg"},
-  {"title":"7wawshi bardo","url":"img6.jpg"},
+  {"title":"Pizza gamda awi","url":"assets/img1.jpg"},
+  {"title":"Burger agmed men el pizza","url":"assets/img2.jpg"},
+  {"title":"Just macaroni","url":"assets/img3.jpg"},
+  {"title":"Chicken Panne","url":"assets/img4.jpg"},
+  {"title":"7wawshi","url":"assets/img5.jpg"},
+  {"title":"7wawshi bardo","url":"assets/img6.jpg"},
 ];
 
 
@@ -73,10 +73,9 @@ List<Widget> data = arr.map((e){
       ClipRRect(
         borderRadius: BorderRadius.circular(15),
         child: Image.asset(
-        
         e["url"] ?? "",
-        height: 150,
-        width: 150,
+        height: 100,
+        width: 100,
         fit: BoxFit.cover,
       ),
       ),
@@ -86,7 +85,7 @@ List<Widget> data = arr.map((e){
         e["title"] ?? "",
         style: TextStyle(
           color: Colors.black,
-          fontSize: 16,
+          fontSize: 14,
           fontWeight: FontWeight.w600
         ),
       ),
@@ -95,5 +94,4 @@ List<Widget> data = arr.map((e){
   ),
   );
 }).toList();
-
 
